@@ -110,11 +110,13 @@ onMounted(() => {
       <div class="text-white text-lg sm:text-xl mb-4 px-5 md:px-0">
         Make UI more interactive, responsive, and user friendly
       </div>
-      <button
+      <a
+        href="/cv/CV-Valensyah-Frontend.pdf"
+        target="_blank"
         class="rounded-full px-3 py-2 text-md sm:text-xl text-white border border-2 border-white hover:bg-blue-600 hover:shadow-md hover:border-blue-600 hover:cursor-pointer hover:-translate-y-1 animate duration-500 ease-in-out"
       >
         Download CV
-      </button>
+      </a>
     </div>
     <div
       class="w-full h-screen hidden lg:block lg:h-fit lg:place-items-end absolute top-0 left-0 lg:static"

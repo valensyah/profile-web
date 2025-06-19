@@ -28,7 +28,7 @@ const code = ref<Array<Code>>([
 const qna = ref<QNA[]>([
   {
     q: 'Date and last two digits of the year Indonesia gained independence',
-    a: '1945',
+    a: '1745',
   },
   {
     q: 'Date and month gojek was found',
