@@ -1,7 +1,8 @@
 <script setup>
 import HomeBanner from '../components/home/HomeBanner.vue'
 import ProfileSection from '@/components/home/ProfileSection.vue'
-import CareerSection from '@/components/home/CareerSection.vue';
+import CareerSection from '@/components/home/CareerSection.vue'
+import DemoSection from '@/components/home/DemoSection.vue'
 </script>
 
 <template>
@@ -9,5 +10,6 @@ import CareerSection from '@/components/home/CareerSection.vue';
     <HomeBanner />
     <ProfileSection />
     <CareerSection />
+    <DemoSection />
   </main>
 </template>

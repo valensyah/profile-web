@@ -20,6 +20,12 @@ const images3 = ref<Array<String>>([
   '/images/stack/ts.png',
 ])
 
+const smoothScroll = (id: string) => {
+  document.querySelector(id).scrollIntoView({
+    behavior: 'smooth',
+  })
+}
+
 onMounted(() => {
   const navbar = document.getElementById('navbar')
   if (!navbar) return
@@ -45,6 +51,7 @@ onMounted(() => {
 
 <template>
   <div
+    id="home"
     class="w-full h-screen bg-neutral-900 flex flex-col lg:flex-row justify-end lg:justify-center items-center overflow-hidden relative"
   >
     <div
@@ -52,34 +59,24 @@ onMounted(() => {
       class="w-full h-fit text-neutral-900 fixed top-0 left-0 px-5 md:px-20 py-5 md:flex gap-4 justify-end items-center hidden animate ease-in-out duration-150 z-50"
     >
       <a
-        href="#"
-        class="hover:text-white font-semibold px-2.5 py-1 hover:font-normal hover:shadow hover:bg-blue-600 animate duration-350 ease-in-out rounded-lg"
+        @click="smoothScroll('#home')"
+        class="hover:text-white font-semibold cursor-pointer px-2.5 py-1 hover:font-normal hover:shadow hover:bg-blue-600 animate duration-350 ease-in-out rounded-lg"
         >Home</a
       >
       <a
-        href="#"
-        class="hover:text-white font-semibold px-2.5 py-1 hover:font-normal hover:shadow hover:bg-blue-600 animate duration-350 ease-in-out rounded-lg"
+        @click="smoothScroll('#profile')"
+        class="hover:text-white font-semibold cursor-pointer px-2.5 py-1 hover:font-normal hover:shadow hover:bg-blue-600 animate duration-350 ease-in-out rounded-lg"
         >About</a
       >
       <a
-        href="#"
-        class="hover:text-white font-semibold px-2.5 py-1 hover:font-normal hover:shadow hover:bg-blue-600 animate duration-350 ease-in-out rounded-lg"
+        @click="smoothScroll('#career')"
+        class="hover:text-white font-semibold cursor-pointer px-2.5 py-1 hover:font-normal hover:shadow hover:bg-blue-600 animate duration-350 ease-in-out rounded-lg"
         >Career</a
       >
       <a
-        href="#"
-        class="hover:text-white font-semibold px-2.5 py-1 hover:font-normal hover:shadow hover:bg-blue-600 animate duration-350 ease-in-out rounded-lg"
-        >Project</a
-      >
-      <a
-        href="#"
-        class="hover:text-white font-semibold px-2.5 py-1 hover:font-normal hover:shadow hover:bg-blue-600 animate duration-350 ease-in-out rounded-lg"
+        @click="smoothScroll('#demo')"
+        class="hover:text-white font-semibold cursor-pointer px-2.5 py-1 hover:font-normal hover:shadow hover:bg-blue-600 animate duration-350 ease-in-out rounded-lg"
         >Demo</a
-      >
-      <a
-        href="#"
-        class="hover:text-white font-semibold px-2.5 py-1 hover:font-normal hover:shadow hover:bg-blue-600 animate duration-350 ease-in-out rounded-lg"
-        >Contact</a
       >
     </div>
     <div
