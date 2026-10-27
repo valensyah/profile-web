@@ -37,7 +37,7 @@ export function AboutMe() {
                 <h1 className="font-extrabold text-white text-3xl font-mono">Hi Everyone!</h1>
                 <p className="text-justify text-white text-base font-mono">
                     I'm Valen. I'm a Fullstack Developer and highly skilled in <strong>Frontend Development</strong>. 
-                    For the past 3 years, i've been working in IT division to build and maintaining Web application with modern tech stack mostly in
+                    For the past 4 years, i've been working in IT division to build and maintaining Web application with modern tech stack mostly in
                     <strong> JavaScript/Typescript</strong>.
                     <br/>
                     <br/>
