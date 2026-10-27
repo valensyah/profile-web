@@ -1,4 +1,4 @@
-import { useRef, useEffect, useState } from "react";
+import { useRef } from "react";
 import { cn } from "../lib/utils";
 export function Portfolio() {
     const toolsContainerRef = useRef<HTMLDivElement>(null);
